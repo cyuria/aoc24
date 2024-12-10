@@ -38,7 +38,7 @@ trails = [
     for trail in routes(map, x, y)
 ]
 
-print(len(set(
+print(len({
     (trail[0], trail[-1])
     for trail in trails
-)))
+}))
